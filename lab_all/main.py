@@ -153,3 +153,24 @@ c = input_positive_real_number()
 area = triangle_area(a, b, c)
 if area:
     print(f"Площа трикутника: {area}")
+
+
+#########Додати в словник:
+def add_to_dict(dict, key, value):
+    dict[key] = value
+    print(f"Додано: {key} -> {value}")
+
+dict = {"green": "зелений" }
+add_to_dict(my_dict, "red", "червоний")
+print(my_dict)
+
+########### Удалити
+def remove_from_dict(dict, key):
+    if key in dict:
+        value = dict.pop(key)
+        print(f"Видалено: {key} -> {value}")
+    else:
+        print("Ключ не знайдено")
+
+remove_from_dict(dict, "green")
+print(my_dict)
