@@ -81,7 +81,7 @@ def main():
     fact_a = int(input("Введіть a для факторіалу: "))
     log_n, log_m = map(int, input("Введіть n та m для логарифму: ").split())
     
-    print(f"Обернене число: {reverse_number(n)}")
+    print(f"\nОбернене число: {reverse_number(n)}")
     print(f"Кількість входжень цифри {d} у числі {n}: {count_digit(n, d)}")
     print(f"Значення виразу {expression}: {evaluate_expression(expression)}")
     print(f"Корінь рівняння методом половинного ділення: {binary_search(lambda x: x**2 - 2, a, b)}")
