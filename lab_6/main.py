@@ -41,7 +41,7 @@ def create_list_ignore_non_numbers():
             try:
                 result.append(int(value))
             except ValueError:
-                pass  # ігнорувати нечислові дані
+                pass  
     except EOFError:
         return result
 
@@ -88,7 +88,7 @@ def create_list_n_numbers_ignore(n):
             value = input("Введіть ціле число: ")
             result.append(int(value))
         except ValueError:
-            pass  # ігноруємо некоректне введення
+            pass  
     return result
 
 # завдання 7
@@ -96,7 +96,7 @@ def create_list_of_type(desired_type):
     result = []
     try:
         while True:
-            value = input(f"Введіть значення типу {desired_type.__name__}: ")
+            value = input(f"Введіть значення типу {desired_type.__name__}: ") #__name__ — об'єкт типу, який повертає назву у вигляді рядка
             result.append(desired_type(value))
     except ValueError:
         raise RuntimeError(f"Введено значення, що не можна перетворити у {desired_type.__name__}!")
